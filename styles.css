@@ -11,6 +11,16 @@ body {
   flex-direction: column;
   
 }
+
+.glow {
+  box-shadow: 0 0 40px 10px rgb(136, 4, 4);
+}
+
+.hover:hover {
+  cursor: pointer;
+  background-color: rgb(100, 3, 3);
+}
+
 .color1 {
   height: fit-content;
   background-color: #1f2937;
@@ -20,15 +30,16 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 16px 0;
   margin: 0 100px 50px;
 }
 .logo {
   display: flex;
   flex: 1;
-  color: #f9faf8;
-  font-size: 24px;
-  font-weight: 900;
+  height: 75px;
+  width: auto;
+  
 }
 
 .links ul {
@@ -48,7 +59,7 @@ body {
   flex-wrap: wrap;
   width: 300px;
   flex: 1;
-  gap: 8px;
+  gap: 36px;
 }
 
 .main-title {
@@ -69,7 +80,7 @@ a {
 }
 
 .title button {
-  background-color: #3882f6;
+  background-color: red;
   color: #f9faf8;
   padding: 4px 20px;
   border-radius: 5px;
@@ -77,14 +88,11 @@ a {
   font-weight: bold;
 }
 
-.hover:hover {
-  cursor: pointer;
-  background-color: #76a5f1;
-}
 
 .title-section img {
   width: auto;
-  height: 216px;
+  height: 250px;
+  margin-left: 30px;
 }
 
 .content {
@@ -96,7 +104,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 36px;
+  margin-bottom: 60px;
   font-size: 36px;
   font-weight: 900;
   color: #1f2937;
@@ -105,20 +113,25 @@ a {
 .info {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 16px;
+  align-items: flex-start;
+  gap: 42px;
 }
 
 .card {
   flex-wrap: wrap;
-  width: 150px;
+  width: 250px;
   text-align: center;
 }
 
+div .card {
+  font-size: 24px;
+}
+
 .info img {
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 250px;
   border-radius: 10px;
+  margin-bottom: 40px;
 }
 
 .color2 {
@@ -144,8 +157,8 @@ a {
   padding: 96px 150px;
 }
 
-.blue-box {
-  background-color: #3882f6;
+.red-box {
+  background-color: darkred;
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
@@ -153,10 +166,16 @@ a {
   padding: 32px 72px;
 }
 
+.flame-gif {
+  height: 100px;
+  width: auto;
+}
+
 .text {
   color: #e5e7eb;
   font-size: 18px;
   flex-wrap: wrap;
+  width: 400px;
 }
 
 .bold {
@@ -164,12 +183,13 @@ a {
 }
 
 .sign-up button {
-  background-color: #3882f6;
+  background-color: red;
   color: #f9faf8;
   padding: 4px 20px;
   border-radius: 5px;
   border: 2px solid #e5e7eb;
   font-weight: bold;
+  
 }
 
 .footer {
@@ -180,4 +200,3 @@ a {
   padding: 24px;
   color: #f9faf8;
 }
-
